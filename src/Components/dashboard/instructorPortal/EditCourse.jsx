@@ -589,10 +589,10 @@ export default function EditCourse() {
     );
 
     return (
-        <div className="editCourseWrapper">
+      <div className="editCourseWrapper">
             <Instructor num={4} ></Instructor>
             <div className="instructorCoursesWrapper">
-                {user.coursesAsInstructor.map((item, index) => {
+                {typeof user.coursesAsInstructor[0] === 'object' ? user.coursesAsInstructor.map((item, index) => {
                     return <div className="INScourseCard">
                         <img id="INScourseCardImg" src={item.thumbnail} alt="" />
                         <MdEdit onClick={() => { setEdit(true);  setCourseInd(index) }} style={{ position: 'absolute', bottom: '10', left: '12', cursor: 'pointer' }} size={25}></MdEdit>
@@ -601,7 +601,7 @@ export default function EditCourse() {
 
                     </div>
 
-                })}
+                }) : <Loader></Loader>}
             </div>
 
         </div>
