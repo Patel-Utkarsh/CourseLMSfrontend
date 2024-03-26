@@ -49,8 +49,7 @@ export default function ProfileIcon() {
                             <FaCaretUp style={toggleBtnOptions} size={15} onClick={()=>{setProfileMenu(!profileMenu)}}></FaCaretUp>
                             <div className="profileIconHoverDiv">
                                 <Link to={'dashboard/MyAccount'}><p>Dashboard</p></Link>
-                                <p>My Courses</p>
-                                <p>Edit Profile</p>
+                                <Link to = {'/myCourses'}<p>My Courses</p></Link>
                                 <p onClick={logOut}>Log Out</p>
                             </div>
 
