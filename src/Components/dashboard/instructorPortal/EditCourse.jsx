@@ -28,7 +28,6 @@ export default function EditCourse() {
     const [subSectionId, editSubSectionId] = useState(null);
     const [deleteSubsectionId, setdeleteSubSectionId] = useState(null);
     const [deleteSectionId, setdeleteSectionId] = useState(null);
-    console.log(courseInd);
 
 
 
@@ -89,14 +88,13 @@ export default function EditCourse() {
 
 
 
-    console.log(singleSectionData);
 
     async function getCategories() {
-        setLoader(true);
+    
         const data = await fetch('https://courselms-4.onrender.com/api/v1/getAllCategories');
         const categories = await data.json();
         setCategoryData(categories.data);
-        setLoader(false);
+   
 
 
     }
