@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Instructor(data) {
+      const { user} = useContext(AppProvider);
     const style = {
         color  : '#a435f0'
     }
