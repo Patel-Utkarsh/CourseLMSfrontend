@@ -5,7 +5,7 @@ import { MdError } from "react-icons/md";
 import { AppProvider } from "../../../data";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Loader from "../../Loader"
 
 
@@ -103,6 +103,7 @@ export default function Login() {
             <h1 id="loginDlg">Log In</h1>
             <input id="em" type="email" name="email" onChange={formHandler} placeholder="Email" />
             <input id="em" type="password" name= "password" onChange={formHandler} placeholder="Password" />
+             <Link to={'/forget-password'}><p id="forgotPassDialog">Forgot Password?</p></Link>
             <button id="login" onClick={submitHandler}>Log In</button>
 
           </div>
