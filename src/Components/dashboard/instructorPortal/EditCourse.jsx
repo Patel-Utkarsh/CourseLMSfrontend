@@ -601,7 +601,7 @@ export default function EditCourse() {
 
                     </div>
 
-                }) : user.coursesAsInstructor ?   <Loader></Loader> : <div> No Courses Available </div>}
+                }) : user.coursesAsInstructor.length > 0 ?   <Loader></Loader> : <div> No Courses Available </div>}
             </div>
 
         </div>
