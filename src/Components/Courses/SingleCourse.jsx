@@ -7,6 +7,8 @@ import { GrLanguage } from "react-icons/gr";
 import { MdAssignment, MdContactPage  } from "react-icons/md";
 import { FaFileDownload,FaMobileAlt,FaTrophy } from "react-icons/fa";
 import SectionCard from "./sectionCard";
+import Loader from "../Loader";
+import { toast } from "react-toastify";
 
 const iconDefSettings = {
     display : 'inline',
@@ -21,7 +23,7 @@ export default function SingleCourse() {
 
     const [course, setCourseData] = useState(null);
     const [whatWillYouLearn,setWhatWillYouLearn] = useState("");
-    const {setStars,user,cart,getDetails} = useContext(AppProvider);
+    const {setStars,user,cart,getDetails,loader,setLoader} = useContext(AppProvider);
 
     function goToCartHandler() {
         navigate('/cart');
@@ -32,9 +34,11 @@ export default function SingleCourse() {
   
 
     async function getCourseDetails() {
+        setLoader(true);
         const data = await fetch(`https://courselms-4.onrender.com/api/v1/getCourse/${courseId}`)
 
         const course = await data.json();
+        setLoader(false);
         setCourseData(course);
         setWhatWillYouLearn(course.courseData.whatWillyouLearn);
         
@@ -42,6 +46,7 @@ export default function SingleCourse() {
     }
 
     async function addToCart(){
+        setLoader(true);
      
         const data = await fetch('https://courselms-4.onrender.com/api/v1/addToCart',{
             method: 'PUT',
@@ -57,7 +62,9 @@ export default function SingleCourse() {
         });
 
         const response = await data.json();
-        console.log(response);
+        //console.log(response);
+        setLoader(false);
+        toast.success('Course Added to cart')
         getDetails();
 
     }
@@ -73,6 +80,8 @@ export default function SingleCourse() {
         getCourseDetails()
 
     }, [])
+    
+    if(loader) return <Loader></Loader>
     return (
         course === null ? ' '  :
 
