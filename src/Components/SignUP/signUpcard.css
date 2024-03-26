@@ -198,3 +198,30 @@
     margin-top: 20px;
   }
 
+@media (max-width : 600px) {
+    .ims{
+      flex-direction: column;
+    }
+
+    .signUpLeftSection{
+      width: 95%;
+      margin: 0 auto;
+      height: 300px;
+      margin-top: 50px;
+    }
+
+    #signUpHeading,#signUptext{
+      display: none;
+    }
+
+    .signUpRightSection{
+      width: 90%;
+      margin-top: 0px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+    
+  }
+
+
+
