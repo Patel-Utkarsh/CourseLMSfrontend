@@ -766,6 +766,12 @@
     #FooterDiv3Action3{
         margin-left: 50px;
     }
+
+       .MidSectionDiv2  .course-card {
+        width: 95%;
+        padding-left: 0;
+        margin-left: 0;
+    }
 }
 
 
