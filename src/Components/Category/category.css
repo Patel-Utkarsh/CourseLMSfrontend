@@ -58,3 +58,22 @@
     gap: 5px;
     
 }
+
+@media (max-width : 600px) {
+   .categoryInnerDiv1{
+    width: 30%;
+    margin-right: 20px;
+   }
+
+   .categoryInnerDiv2{
+    padding-left: 5px;
+    border: none;
+    padding-right: 10px;
+   }
+
+   .categoryMainDiv{
+    justify-content: space-between;
+   }
+    
+    
+}
