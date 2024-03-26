@@ -1,3 +1,4 @@
+
 import "./profileIcon.css"
 import { useContext, useState } from "react";
 import { useRef,useEffect } from "react";
@@ -49,7 +50,9 @@ export default function ProfileIcon() {
                             <FaCaretUp style={toggleBtnOptions} size={15} onClick={()=>{setProfileMenu(!profileMenu)}}></FaCaretUp>
                             <div className="profileIconHoverDiv">
                                 <Link to={'dashboard/MyAccount'}><p>Dashboard</p></Link>
-                                <Link to = {'/myCourses'}<p>My Courses</p></Link>
+                               
+                                <Link to = {'/myCourses'}><p>My Courses</p></Link>
+                                
                                 <p onClick={logOut}>Log Out</p>
                             </div>
 
