@@ -14,7 +14,7 @@
     width: 45%;
 }
 
-.InstructorInnerDiv2selected{
+.InstructorInnerDiv2.selected{
     display: flex;
     gap: 4px;
     background-color:  #5943eb;
