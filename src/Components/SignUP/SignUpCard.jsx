@@ -20,8 +20,7 @@ function SignUpCard() {
     const { formData, setFormData } = useContext(AppProvider);
     const [modal, setModal] = useState(false);
     const [inputArr, setInputArr] = useState(["", "", "", ""])
-    console.log(modal)
-
+  
     async function submitHandler() {
 
         const arr = Object.values(formData);
@@ -96,10 +95,12 @@ function SignUpCard() {
 
     const payload = {
         position: 'relative',
-        top: -25,
-        right: -430,
+        top: window.innerWidth < 600? '-45%' : -25,
+        right: window.innerWidth < 600? '-90%' : -430,
         cursor: 'pointer',
     }
+
+      
 
     function formHandler(e) {
         //console.log(e);
