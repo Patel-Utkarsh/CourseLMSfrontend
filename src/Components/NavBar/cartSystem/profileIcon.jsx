@@ -34,6 +34,7 @@ export default function ProfileIcon() {
         localStorage.removeItem("user");
         toast.success('Logged Out');
         navigate('/')
+          window.location.reload();
 
     }
 
