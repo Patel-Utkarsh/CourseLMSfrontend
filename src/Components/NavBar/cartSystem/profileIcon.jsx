@@ -36,42 +36,25 @@ export default function ProfileIcon() {
 
 
 
-    return (
-        <div>
-            <div className="profileInnerDiv1">
-                <div className="profileIconClass">{profileName}</div>
-                {
-                    profileMenu ?
-                        <div>
-
-                            <FaCaretUp style={toggleBtnOptions} size={15} onClick={()=>{setProfileMenu(!profileMenu)}}></FaCaretUp>
-                            <div className="profileIconHoverDiv">
-                                <Link to={'dashboard/MyAccount'}><p>Dashboard</p></Link>
-                               <Link to={'/myCourses'} <p>My Courses</p></Link>
-                        
-                                <p onClick={logOut}>Log Out</p>
-                            </div>
-
-                        </div>
-
-                        :
-
-                        
-
-                        <FaCaretDown style={toggleBtnOptions} size={15} onClick={()=>{setProfileMenu(!profileMenu)}}></FaCaretDown>
-
-    
-                        
-
-                    }
-
-
-
-
-
+    {user && user.account_type !== 'student' ? (
+    <>
+        <Link to={'/dashboard/addNewCourse'}>
+            <div className={`InstructorInnerDiv2${num === 3 ? 'selected' : ''}`} onClick={() => setNum(3)}>
+                <IoMdAddCircle style={style}></IoMdAddCircle>
+                <p>Add Courses</p>
             </div>
-        </div>
-    );
+        </Link>
+        <Link to={'/dashboard/editCourse'}>
+            <div onClick={() => setNum(4)} className={`InstructorInnerDiv2${num === 4 ? 'selected' : ''}`}>
+                <FaEdit style={style}></FaEdit>
+                <p>Edit Course</p>
+            </div>
+        </Link>
+    </>
+) : (
+    <FaCaretDown style={toggleBtnOptions} size={15} onClick={() => setProfileMenu(!profileMenu)}></FaCaretDown>
+)}
+
 
 
 }
