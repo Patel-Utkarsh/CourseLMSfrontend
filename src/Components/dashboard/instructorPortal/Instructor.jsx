@@ -1,10 +1,12 @@
 import "./instructor.css";
 import { IoMdAddCircle } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
-import { FaEdit, FaBarsProgress } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppProvider } from "../../../data";
+import { FaBarsProgress } from "react-icons/fa6";
+
 
 export default function Instructor(data) {
     const { user } = useContext(AppProvider);
