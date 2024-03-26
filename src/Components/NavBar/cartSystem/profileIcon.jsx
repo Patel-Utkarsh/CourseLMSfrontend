@@ -33,7 +33,7 @@ export default function ProfileIcon() {
         localStorage.removeItem("token");
         localStorage.removeItem("user");
         toast.success('Logged Out');
-        window.location.reload();
+        navigate('/')
 
     }
 
