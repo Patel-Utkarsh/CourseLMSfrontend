@@ -12,10 +12,10 @@ export default function ProfileIcon() {
     const [name, setName] = useState(user.name);
 
     const fullName = name.split(' ');
-    const profileName = fullName[0][0] + fullName[1][0];
-    console.log(profileName);
+    const profileName = fullName[0][0].charAt(0).toUpperCase() + fullName[1][0]..charAt(0).toUpperCase();
+   
     const [profileMenu, setProfileMenu] = useState(false);
-    console.log('width is ', window.innerWidth);
+ 
 
     const toggleBtnOptions = {
         position: 'absolute',
@@ -47,8 +47,8 @@ export default function ProfileIcon() {
                             <FaCaretUp style={toggleBtnOptions} size={15} onClick={()=>{setProfileMenu(!profileMenu)}}></FaCaretUp>
                             <div className="profileIconHoverDiv">
                                 <Link to={'dashboard/MyAccount'}><p>Dashboard</p></Link>
-                                <p>My Courses</p>
-                                <p>Edit Profile</p>
+                               <Link to={'/myCourses'} <p>My Courses</p></Link>
+                        
                                 <p onClick={logOut}>Log Out</p>
                             </div>
 
