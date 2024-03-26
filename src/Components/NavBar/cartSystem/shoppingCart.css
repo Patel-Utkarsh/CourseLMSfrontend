@@ -113,3 +113,23 @@
    margin-left: 40px;
    margin-bottom: 10px;
 }
+
+@media (max-width : 600px) {
+    .shoppingCartWrapperInnerDiv1{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #imgThumb{
+        width: 75px;
+    }
+
+    .shoppingCartWrapperInnerDiv5{
+        width: 35%;
+    }
+
+    #shoppingCartWrapperInnerDiv4D2{
+        margin-left: 0;
+    }
+    
+}
