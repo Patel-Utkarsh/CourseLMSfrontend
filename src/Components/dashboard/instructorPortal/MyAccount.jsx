@@ -86,12 +86,12 @@ export default function MyAccount() {
 
                         <label htmlFor="contact">
                             Contact:
-                            <input id="contact" type="text" name="contact" value={formData.contact} onChange={handleChange} placeholder={ user.profile.contactNo? user.profile.contactNo : 'XXX931XXXX'} />
+                            <input id="contact" type="text" name="contact" value={formData.contact} onChange={handleChange} />
                         </label>
 
                         <label htmlFor="about">
                             About:
-                            <textarea id="about" name="about" value={formData.about} onChange={handleChange} placeholder={ user.profile.about? user.profile.about : 'Enter About'} />
+                            <textarea id="about" name="about" value={formData.about} onChange={handleChange}  />
                         </label>
 
                         <button type="submit">Save Changes</button>
