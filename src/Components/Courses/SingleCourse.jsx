@@ -46,6 +46,7 @@ export default function SingleCourse() {
     }
 
     async function addToCart(){
+        if(!user) navigate('/login')
         setLoader(true);
      
         const data = await fetch('https://courselms-4.onrender.com/api/v1/addToCart',{
