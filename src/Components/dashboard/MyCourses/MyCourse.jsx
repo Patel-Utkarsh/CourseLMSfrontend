@@ -32,31 +32,24 @@ export default function MyCourse() {
   
     return (
     <div className="MyCoursesWrapperClass">
-        <Instructor num={2}></Instructor>
-        <div className="MyCoursesInnerDiv1">
-            <p id="MyCoursesDg1">My Courses</p>
-            <div className="MyCoursesInnerDiv2">
-                {
-                  courseDetails.length > 0 && typeOf courseDetails[0] === 'object'  ?   courseDetails.map((course)=>{
-                        return (
-                            
-                            <div onClick={()=>clickingCardHandler(course,course._id)} className="myCourseCards">
-                                <img id="myCourseThumnail" src={course.thumbnail} alt="" />
-                                <p id="myCourse">{course.courseName}</p>
-                            </div>
-                            
-                        );
-                    }) :  courseDetails.length > 0 ? <Loader></Loader> : <div>No Courses Available</div>
-                    
-                }
-
-
-            </div>
-        
+    <Instructor num={2} />
+    <div className="MyCoursesInnerDiv1">
+        <p id="MyCoursesDg1">My Courses</p>
+        <div className="MyCoursesInnerDiv2">
+            {courseDetails.length > 0 && typeof courseDetails[0] === 'object' ? (
+                courseDetails.map((course) => (
+                    <div onClick={() => clickingCardHandler(course, course._id)} className="myCourseCards" key={course._id}>
+                        <img id="myCourseThumnail" src={course.thumbnail} alt="" />
+                        <p id="myCourse">{course.courseName}</p>
+                    </div>
+                ))
+            ) : (
+                courseDetails.length > 0 ? <Loader /> : <div>No Courses Available</div>
+            )}
         </div>
-
-      
     </div>
+</div>
+
     );
 
 
