@@ -1,0 +1,60 @@
+.CategoryWrapper{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.categoryMainDiv{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+
+
+.categorySidebar{
+    display: flex;
+    
+}
+
+.categoryInnerDiv1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+   
+}
+
+
+
+.categoryInnerDiv2{
+    margin-top: 10px;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+#categoryCheckbox{
+    color: black;
+}
+#categoryInnerDiv1D1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#categoryCheckbox{
+    margin-right: 5px;
+}
+
+#catName{
+    font-size: 17px;
+    margin-top: -2px;
+}
+
+.categoryInnerDiv3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}

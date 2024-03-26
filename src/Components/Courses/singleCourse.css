@@ -1,0 +1,204 @@
+.SingleCourseWrapperClass{
+    margin-bottom: 50px;
+    color: white;
+}
+.SingleCourseDiv1{
+   background-color: #2d2f31;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+#SingleCourseDiv1InnerDiv1D1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.SingleCourseMidSection2InnerDiv2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.SingleCourseDiv1InnerDiv1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.SingleCourseDiv1InnerDiv1D4{
+    background-color: #eceb98;
+    color: black;
+    width: 90px;
+   padding-left: 10px;
+   font-weight: bold;
+  
+}
+
+.SingleCourseDiv1InnerDiv3{
+    display: flex;
+    gap: 40px;
+}
+
+.SingleCourseDiv1InnerDiv6{
+    margin-top: 5px;
+    display: flex;
+}
+
+.SingleCourseDiv1InnerDiv3{
+    display: flex;
+}
+
+#SingleCourseDiv1InnerDiv2Img1{
+    height: 150px;
+    width: 300px;
+}
+
+.SingleCourseDiv1InnerDiv2{
+   
+    margin-top: 40px;
+    padding-bottom: 20px;
+   
+}
+
+.SingleCourseDiv1InnerDiv7{
+    background-color: white;
+    color : black;
+    padding-bottom: 30px;
+    position: sticky;
+    border-radius: 5px;
+    padding-top: 10px;
+
+   
+}
+
+#SingleCourseDiv1InnerDiv7D1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.SingleCourseDiv1InnerDiv8{
+    display: flex;
+    flex-direction: column;
+}
+
+#SingleCourseDiv1InnerDiv7Action1{
+    background-color: #a435f0;
+    width: 230px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+ 
+}
+
+
+#SingleCourseDiv1InnerDiv7Action2{
+    width: 230px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+ 
+}
+
+.SingleCourseMidSection1{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    color: black;
+    margin-top: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#SingleCourseMidSection1D1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#SingleCourseMidSection1D2{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.SingleCourseMidSection2{
+    color: black;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+  
+}
+
+.SingleCourseMidSection2InnerDiv1{
+    display: flex;
+    margin-left: 10px;
+    font-size: 17px;
+  
+}
+
+#SingleCourseMidSection2D1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#SingleCourseMidSection2InnerDiv3Img1{
+    height: 400px;
+}
+
+.SingleCourseMidSection3{
+    width: 90%;
+    margin: 0 auto;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+#SingleCourseMidSection3D1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+@media (max-width : 600px) {
+
+    .SingleCourseDiv1InnerDiv1, .SingleCourseDiv1InnerDiv2{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .SingleCourseDiv1{
+        flex-direction: column;
+    }
+
+    .SingleCourseDiv1InnerDiv7{
+        width: 300px;
+    }
+
+    .SingleCourseDiv1InnerDiv2{
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 60px;
+        
+    
+    }
+
+    
+}
+    
+
+

@@ -1,0 +1,48 @@
+#video{
+    height: 400px;
+
+}
+
+.VideoWrapper{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.coursesSectionListDivC{
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#videoLink{
+    color: #684EDC;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width  : 600px) {
+    #video {
+        height: 230px;
+
+    }
+
+    .VideoWrapper{
+       
+        flex-direction: column;
+    }
+
+    .coursesSectionListDivC{
+        max-height: 250px;
+        margin-top: 20px;
+    }
+
+    .coursesSectionListDivItem1A{
+        width: 100%;
+    }
+    
+}

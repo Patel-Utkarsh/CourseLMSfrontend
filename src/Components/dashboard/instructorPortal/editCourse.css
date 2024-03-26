@@ -1,0 +1,309 @@
+*{
+    outline: none;
+}
+.editCourseWrapper{
+    display: flex;
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+
+.form-group{
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+#INScourseCardImg{
+    height: 200px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.INScourseCard{
+    border: 2px solid gainsboro;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+
+}
+
+.instructorCoursesWrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#addSection{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 13px;
+    border-radius: 3px;
+}
+
+#dragAndDropUploadDg1{
+    text-align: center;
+}
+
+#editCourseHeading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* editCourse.css */
+
+ 
+  
+  .addSectionDiv {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);/* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+  .ModalsectionDiv{
+   height: 400px;
+    width: 500px;
+    z-index: 4;
+    position: relative;
+    border: 3px solid #A435F0;
+    background-color: white;
+    position: relative;
+  }
+
+  #addSectionInput{
+   width: 80%;
+   margin: 0 auto;
+   display: block;
+   border-radius: 5px;
+  
+  }
+
+  #addLectureBtn{
+    color: #684edc;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    font-weight: bold;
+  }
+
+  .addLectureDiv{
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .addLectureBox{
+    height:auto;
+    padding: 20px;
+    width: 500px;
+    border: 1px solid black;
+
+  }
+
+  #lectureNameInput{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+  }
+
+  #upload{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+   
+    margin-top: 20px;
+    border: 3px dotted black;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+ 
+
+  #AddSectionSaveBtn{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .addLectureActionBtns{
+    display: flex;
+    justify-content:flex-end;
+  }
+
+  #AddSectionCancelBtn{
+    margin-right: 20px;
+  }
+
+  .addLectureActionBtns1{
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .ModalWrapper{
+
+    margin-top: 50px;
+
+  }
+
+  #saveChangesAddSection{
+    padding: 9px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 10px;
+    right: 25px;
+    border-radius: 3px;
+  }
+
+  .uploadItemsListInnerDiv1{
+    display: flex;
+    gap: 10px;
+  }
+
+ 
+
+  .coursesSectionListDivItem1A{
+    width: 300px;
+    background-color: #f7f9fa;
+    border: 1px solid gainsboro;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content:space-between;
+  }
+
+
+  .coursesSectionListDivItem{
+    background-color: #f7f9fa;
+    border: 1px solid gainsboro;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .coursesSectionListDivItem1{
+    display: flex;
+    gap: 8px;
+  }
+
+  .coursesSubSectionDiv1{
+    padding-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    padding-right: 30px;
+
+  }
+
+  .coursesSubSectionDiv2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .coursesSubSectionDiv3{
+    display: flex;
+    gap: 10px;
+  }
+
+  .deleteDialogBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+  }
+
+  .deleteDialogBoxInnerDiv{
+    background-color: white;
+    height: 140px;
+    width: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #deleteDg1{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .deletedgActionBtns{
+    display: flex;
+    gap: 15px;
+  }
+
+
+  #proceedDelete{
+    background-color: black;
+    padding: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: white;
+    border-radius: 2px;
+  }
+
+  @media (max-width : 600px) {
+    .course-form{
+      margin: 0;
+      padding-right: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .coursesSectionListDivItem{
+      width: 95%;
+      margin: 0 auto;
+    }
+    .coursesSubSectionDiv2{
+      width: 90%;
+    }
+    
+  }
+
+

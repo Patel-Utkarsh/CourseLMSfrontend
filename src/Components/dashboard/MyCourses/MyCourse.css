@@ -1,0 +1,45 @@
+.MyCoursesWrapperClass{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+
+.MyCoursesInnerDiv1{
+    margin-top: 50px;
+  
+}
+
+#MyCoursesDg1{
+    text-align: center;
+    font-size: 35px;
+    font-weight:bolder;
+    color: gray;
+}
+
+.myCourseCards{
+    height: 250px;
+    width: 200px;
+    cursor: pointer;
+}
+
+#myCourseThumnail{
+    width: 100%;
+    height: 50%;
+    object-fit:fill;
+}
+
+#myCourse{
+    text-align: center;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.MyCoursesInnerDiv2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

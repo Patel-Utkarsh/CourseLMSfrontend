@@ -1,0 +1,773 @@
+*{
+    font-family: 'Josefin Sans'
+}
+.TopSectionDiv{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#topSectionLeftImg{
+    height: 450px;
+    object-fit:contain;
+    margin-top: 40px;
+}
+.topSectionLeftDiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 13px;
+    margin-top: 70px;
+ 
+}
+
+#homedg1{
+    font-size: 20px;
+    font-weight :500;
+    color: grey;
+
+}
+
+#homedg2{
+    font-size: 50px;
+    font-weight :bolder;
+ 
+
+}
+
+#homedg3{
+    margin-top: 10px;
+}
+
+#sphome1{
+    margin-left: 15px;
+}
+
+#homeAction1{
+    margin-top: 20px;
+    background-color: #543ee8;
+    color: white;
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background : linear-gradient(118.54deg,#8674FF 6.57%,#593EFE 85.92%);
+    border: 1px solid #543ee8;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+     
+}
+
+.TopSectionDiv2{
+    width: 95%;
+    margin: 0 auto;
+    background-color: #543ee8;
+    margin-top: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 27px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+#TopSectionDiv2Img1{
+    height: 80px;
+    margin-left: 35%;
+    border-radius: 50%;
+}
+
+#TopSectionDiv2Img2{
+    margin-left: 35%;
+    height: 80px;
+}
+#TopSectionDiv2Img3{
+    margin-left: 35%;
+    height: 80px;
+}
+
+.TopSectionDiv2InnerDiv{
+    margin-top: 20px;
+    width: 25%;
+   
+    
+}
+
+#TopSectionDiv2D1{
+    font-size: 20px;
+    font-weight:800;
+    text-align: center;
+    margin-top: 3px;
+}
+#TopSectionDiv2D2{
+    color: #D3D3D3;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.TopSectionDiv3{
+    margin-top: 100px;
+  
+}
+
+#TopSectionDiv3D1{
+    text-align: center;
+    color: grey;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#TopSectionDiv3D2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#TopSectionDiv3D3{
+    text-align: center;
+    font-size: 20px;
+}
+.TopSectionDiv3InnerDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+#TopSectionDiv3Img1{
+    width: 250px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.TopSectionDiv3InnerImg2{
+    height: 40px;
+    opacity: 50%;
+  
+
+}
+
+.TopSectionDiv3InnerImg3{
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
+.TopSectionDiv3InnerImg4{
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.TopSectionDiv3InnerImg4s{
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    opacity: 30%;
+}
+  
+
+
+
+.TopSectionDiv3InnerDiv1B{
+    position: relative;
+
+}
+
+
+.TopSectionDiv3InnerDiv1{
+
+    background-color: white;
+   width: 20%;
+   
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px gray;
+    
+}
+
+.TopSectionDiv3InnerDivA{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.TopSectionDiv3InnerDiv1A{
+    position: relative;
+}
+
+#TopSectionDiv3InnerDiv1D1{
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+#TopSectionDiv3InnerDiv1D2{
+    margin-left: 20px;
+    margin-top: 2px;
+
+}
+
+.TopSectionDiv3InnerDiv11{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.MidSectionDiv1{
+    width: 95%;
+    margin: 0 auto;
+    background-color: #f7f6f3;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#MidSectionDiv1InnerDiv1D1{
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+
+}
+
+#MidSectionDiv1InnerDiv1D2{
+    font-size: 40px;
+    font-weight: bold;
+   
+
+}
+
+.MidSectionDiv1InnerDiv1{
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.MidSectionDiv1InnerDiv2{
+    margin-top: 90px;
+    margin-right: 20px;
+   
+    width: 40%;
+}
+
+.MidSectionDiv1InnerDiv2 button {
+    font-size: 15px;
+    background-color: black;
+    padding: 2px;
+   appearance: none;
+   margin-left: 5px;
+   padding: 10px;
+   border-radius: 30px;
+   padding-left: 13px;
+   padding-right: 13px;
+
+
+
+    color: white;
+   
+
+}
+
+#MidSectionDiv1InnerDiv2Btn1{
+    background: linear-gradient(118.54deg,#8674FF 6.57%,#593EFE 85.92%);
+    border: 1px solid #543ee8;
+    box-shadow: 0 5px 6px rgba(99,73,255,.4);
+    color: white;
+}
+
+.MidSectionDiv2{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    background-color: #f7f6f3;
+    padding-bottom: 50px;
+    margin-bottom: 75px;
+ 
+   
+}
+
+
+.MidSectionDiv3{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#MidSectionDiv3InnerDiv1Img1{
+    height: 480px;
+}
+
+.MidSectionDiv3InnerDiv2{
+    width: 40%;
+}
+
+#MidSectionDiv3InnerDiv2D1{
+    font-size: 20px;
+    color: grey;
+}
+
+#MidSectionDiv3InnerDiv2D2{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+#MidSectionDiv3InnerDiv2D3{
+    font-weight: 18px;
+    margin-top: 10px;
+}
+
+#homeAction2 {
+    margin-top: 20px;
+    background-color: #00015b;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background : linear-gradient(118.54deg,#2a2cae 6.57%,#00015b 85.92%);
+    border: 1px solid #543ee8;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+}
+
+.MidSectionDiv4{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+
+    
+}
+#MidSectionDiv4InnerDiv1D1{
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight:bold;
+    text-align: center;
+    color: pink
+}
+.MidSectionDiv4InnerDiv2{
+    width: 80%;
+    margin:  0 auto;
+    
+}
+
+#MidSectionDiv4InnerDiv2Img1{
+    margin-top: 50px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.MidSectionDiv4InnerDiv5{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.MidSectionDiv4InnerDiv6{
+    display: flex;
+
+}
+
+.MidSectionDiv4InnerDiv3{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+#MidSectionDiv4InnerDiv2D1{
+    opacity: 90%;
+}
+
+#MidSectionDiv4InnerDiv2D2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.FooterSection1{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.FooterSectionInnerDiv1{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.FooterSectionInnerDiv2{
+    width: 40%;
+    margin-top: 20px;
+}
+
+#FooterSectionInnerDiv2D1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+#FooterSectionInnerDiv2D2{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.FooterDiv2{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.FooterDiv2InnerDiv1{
+    margin-top: 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#FooterDiv2InnerDiv2Img1{
+    margin-top: 30px;
+    height: 450px;
+    margin-left: 40px;
+}
+
+#FooterDiv2InnerDiv1D1{
+    font-size: 20px;
+    color: gray;
+}
+
+#FooterDiv2InnerDiv1D2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.FooterDiv3{
+    background-color: #543ee8;
+    display: flex;
+    justify-content: end;
+   padding-top: 70px;
+   padding-bottom: 55px;
+
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.FooterDiv3InnerDiv2{
+    display: flex;
+    width: 80%;
+   
+    justify-content: space-around;
+}
+
+#FooterDiv3InnerDiv1{
+    font-size: 30px;
+    font-weight: bold;
+    width: 60%;
+}
+
+
+#FooterDiv3Action3{
+    margin-top: 20px;
+  background-color: white;
+  color: #543ee8 ;
+  border-radius: 30px;
+  height: 40px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+#FooterDiv3Img1{
+    height: 200px;
+    position: absolute;
+    left: 70px;
+    top: 7%;
+}
+
+
+#FooterDiv3Img2{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: 0;
+    height: 150px;
+}
+
+.Footer{
+    background-color: black;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.FooterInnerDiv1{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.FooterInnerDiv2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 20px;
+    color: gray;
+
+}
+
+
+#FooterInnerDiv2InnerD1{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#FooterInnerDiv2InnerD1Inp1{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 25px;
+}
+
+.FooterInnerDiv3{
+    position: relative;
+}
+#ActionBtn5{
+    position: absolute;
+    bottom: 1px;
+
+    right: 69px;
+    background-color: #543ee8 ;
+    color: white;
+    font-size: 13px;
+    padding: 2px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent 
+}
+
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media (max-width : 600px) {
+    .FooterSectionInnerDiv1 {
+        flex-direction: column;
+    }
+
+    .FooterSectionInnerDiv2{
+        width: 100%;
+    }
+
+    .FooterSection1{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .FooterSectionInnerDiv3{
+      margin-top: 30px;
+  
+    }
+
+    .MidSectionDiv4InnerDiv5{
+        flex-direction: column;
+        
+    }
+
+    #MidSectionDiv4InnerDiv2Img1{
+        order: -1;
+        margin-bottom: 20px;
+    }
+    .MidSectionDiv4InnerDiv3{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .MidSectionDiv3{
+        flex-direction: column;
+    }
+    
+
+    .MidSectionDiv3InnerDiv2{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+
+    #MidSectionDiv3InnerDiv2D3{
+        
+        font-size: 22px;
+    }
+
+    .MidSectionDiv2{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .MidSectionDiv1InnerDiv2 button{
+        margin-bottom: 8px;
+     
+    }
+
+    #TopSectionDiv3D3{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .MidSectionDiv1InnerDiv1{
+        padding-top: 50px;
+    }
+
+    .MidSectionDiv1{
+        width: 90%;
+    }
+
+    .TopSectionDiv2{
+        
+        width: 90%;
+        margin:  0 auto;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 50px;
+        
+    }
+
+    .TopSectionDiv2InnerDiv{
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    #TopSectionDiv2D1{
+        font-size: 25px;
+    }
+
+    #TopSectionDiv2D2{
+        font-size: 18px;
+    }
+
+    .TopSectionDiv{
+        width: 90%;
+        margin-bottom: 70px;
+    }
+
+    #topSectionLeftImg{
+        display:none;
+    }
+
+    .topSectionLeftDiv{
+        width: 80%;
+    }
+    #FooterDiv2InnerDiv1D3, #MidSectionDiv4InnerDiv2D1,#homedg3{
+        font-size: 20px;
+    }
+
+    .FooterDiv2{
+        width: 90%;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      
+    }
+
+    #FooterDiv2InnerDiv2Img1{
+        margin: 0;
+     
+    }
+
+    .FooterDiv2InnerDiv1{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .FooterDiv2InnerDiv2{
+        order: -1;
+    }
+
+    #FooterInnerDiv2InnerD1Inp1{
+        width: 100%;
+    }
+
+    #ActionBtn5{
+        font-size: 8px;
+        height: 100%;
+    }
+
+    .TopSectionDiv3InnerDiv1{
+        width: 30%;
+    }
+
+    .FooterDiv3{
+        flex-direction: column;
+    }
+
+    #FooterDiv3Img2,#FooterDiv3Img1{
+       display: none;
+    }
+
+    #FooterDiv3InnerDiv1{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 35px;
+    }
+
+    .FooterDiv3InnerDiv2{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #FooterDiv3Action3{
+        margin-left: 50px;
+    }
+}
+
+
+
+

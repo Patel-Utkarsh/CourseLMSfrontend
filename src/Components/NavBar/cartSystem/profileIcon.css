@@ -1,0 +1,35 @@
+.profileIconClass{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+    position: relative;
+    margin-top: 2px;
+}
+
+.profileIconHoverDiv{
+    color: gray;
+    margin-top: 13px;
+    position: absolute;
+    background-color: white;
+   border: 1px solid gray;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   font-weight: bold;
+   border-radius: 5px;
+
+}
+
+@media (max-width : 600px) {
+    .profileIconHoverDiv{
+        right: 20px;
+
+    }
+    
+}
+

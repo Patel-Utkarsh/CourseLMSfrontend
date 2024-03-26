@@ -1,0 +1,11 @@
+.sectionCard{
+    width: 100%;
+    background-color: #f7f9fa;
+    border: 1px solid #e3e7ea;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+}

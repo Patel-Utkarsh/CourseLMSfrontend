@@ -1,0 +1,47 @@
+.InstructorInnerDiv2{
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 20px;
+   
+    
+}
+
+.InstructorInnerDiv1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+.InstructorInnerDiv2selected{
+    display: flex;
+    gap: 4px;
+    background-color:  #5943eb;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.pg{
+    color:white;
+}
+
+.uploadItemsList{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    padding: 20px;
+    color: #7756dc;
+    font-weight: bold;
+}
+
+
+
+.InstructorWrapper{
+    width: 30%;
+    margin-top: 50px;
+    
+}
