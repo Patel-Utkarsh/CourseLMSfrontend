@@ -25,6 +25,10 @@
 
 }
 
+#logoutBtn{
+    cursor : 'pointer'
+}
+
 @media (max-width : 600px) {
     .profileIconHoverDiv{
         right: 20px;
