@@ -48,3 +48,9 @@ input {
    padding-bottom: 10px;
    color: red;
 }
+
+#forgotPassDialog{
+    color: #725af9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
