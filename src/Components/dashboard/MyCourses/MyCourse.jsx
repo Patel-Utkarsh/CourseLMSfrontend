@@ -37,7 +37,7 @@ export default function MyCourse() {
             <p id="MyCoursesDg1">My Courses</p>
             <div className="MyCoursesInnerDiv2">
                 {
-                  courseDetails ?   courseDetails.map((course)=>{
+                  courseDetails.length > 0 && typeOf courseDetails[0] === 'object'  ?   courseDetails.map((course)=>{
                         return (
                             
                             <div onClick={()=>clickingCardHandler(course,course._id)} className="myCourseCards">
@@ -46,7 +46,7 @@ export default function MyCourse() {
                             </div>
                             
                         );
-                    }) : <Loader></Loader>
+                    }) :  courseDetails.length > 0 ? <Loader></Loader> : <div>No Courses Available</div>
                     
                 }
 
