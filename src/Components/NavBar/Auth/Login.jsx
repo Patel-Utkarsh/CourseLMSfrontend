@@ -6,19 +6,19 @@ import { AppProvider } from "../../../data";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
+import Loader from "../../Loader"
 
 
 export default function Login() {
     const navigate = useNavigate();
 
-    const {token,setToken,setUser}= useContext(AppProvider);
+    const {token,setToken,setUser,loader,setLoader}= useContext(AppProvider);
     const [emptyFields,setEmptyFields] = useState(false);
     const [authData,setAuthData] = useState({
         email : '',
         password : ''
     });
 
-    console.log(authData)
 
     function submitHandler() {
         Object.values(authData).forEach((key) => {
@@ -33,6 +33,7 @@ export default function Login() {
     }
 
     async function dataAuth() {
+        setLoader(true);
         const data = await fetch('https://courselms-4.onrender.com/api/v1/login', {
           method: 'POST',
           headers: {
@@ -50,10 +51,11 @@ export default function Login() {
             setUser(validData.user);
 
             toast.success('Logged In Successfully')
+            setLoader(false);
             setTimeout(() => {
                 navigate('/dashboard/MyAccount')
                 
-            }, 2000);
+            }, 1500);
 
             return
 
@@ -78,7 +80,7 @@ export default function Login() {
         }));
     }
 
- 
+  if(loader) return <Loader></Loader>
     
 
     return (
