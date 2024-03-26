@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 export default function MyAccount() {
     const { user,getDetails } = useContext(AppProvider);
-    console.log(user)
+
 
     const [formData, setFormData] = useState({
         gender: '',
@@ -15,8 +15,6 @@ export default function MyAccount() {
         contact: '',
         about: ''
     })
-
-    console.log(formData);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -73,7 +71,7 @@ export default function MyAccount() {
                         <label htmlFor="gender">
                             Gender:
                             <select id="gender" name="gender" value={formData.gender} onChange={handleChange} >
-                                <option value="">{user.profile.gender? user.profile.gender : 'Select Gender'}</option>
+                                <option value="">Select Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
@@ -81,7 +79,7 @@ export default function MyAccount() {
                         </label>
 
                         <label htmlFor="dob">
-                        {user.profile.dob? user.profile.dob : 'Date of Birth:'}
+                         Date of Birth:
                             
                             <input id="dob" type="date" name="dob" value={formData.dob} onChange={handleChange}  />
                         </label>
