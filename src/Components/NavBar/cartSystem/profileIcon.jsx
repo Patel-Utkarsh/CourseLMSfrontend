@@ -53,7 +53,7 @@ export default function ProfileIcon() {
                                
                                 <Link to = {'/myCourses'}><p>My Courses</p></Link>
                                 
-                                <p onClick={logOut}>Log Out</p>
+                                <p id="logoutBtn" onClick={logOut}>Log Out</p>
                             </div>
 
                         </div>
