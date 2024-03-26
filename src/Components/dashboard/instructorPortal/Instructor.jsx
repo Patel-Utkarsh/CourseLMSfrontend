@@ -41,22 +41,23 @@ export default function Instructor(data) {
                 </div>
                 </Link>
 
-                <Link to={'/dashboard/addNewCourse'}>
+               {user && user.account_type !== 'student' && (
+                    <>
+                        <Link to={'/dashboard/addNewCourse'}>
+                            <div className={`InstructorInnerDiv2${num === 3 ? 'selected' : ''}`} onClick={() => setNum(3)}>
+                                <IoMdAddCircle style={style}></IoMdAddCircle>
+                                <p>Add Courses</p>
+                            </div>
+                        </Link>
+                        <Link to={'/dashboard/editCourse'}>
+                            <div onClick={() => setNum(4)} className={`InstructorInnerDiv2${num === 4 ? 'selected' : ''}`}>
+                                <FaEdit style={style}></FaEdit>
+                                <p>Edit Course</p>
+                            </div>
+                        </Link>
+                    </>
+                )}
 
-                <div className={`InstructorInnerDiv2${num === 3? 'selected' : ''}`} onClick={()=>setNum(3)}>
-                    <IoMdAddCircle style={style}></IoMdAddCircle>
-                    <p>Add Courses</p>
-
-
-                </div>
-                </Link>
-                <Link to={'/dashboard/editCourse'}>
-                <div onClick={()=>setNum(4)} className={`InstructorInnerDiv2${num === 4? 'selected' : ''}`}>
-                    <FaEdit style={style}></FaEdit>
-                    <p>Edit Course</p>
-
-                </div>
-                </Link>
             </div>
         </div>
 
