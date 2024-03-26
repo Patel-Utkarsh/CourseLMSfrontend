@@ -5,14 +5,14 @@ import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import { AppProvider } from "../../../data";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-
+  
 export default function ProfileIcon() {
     const {user} = useContext(AppProvider);
     
     const [name, setName] = useState(user.name);
 
     const fullName = name.split(' ');
-    const profileName = fullName[0][0].charAt(0).toUpperCase() + fullName[1][0]..charAt(0).toUpperCase();
+    const profileName = fullName[0][0].charAt(0).toUpperCase() + fullName[1][0].charAt(0).toUpperCase();
    
     const [profileMenu, setProfileMenu] = useState(false);
  
