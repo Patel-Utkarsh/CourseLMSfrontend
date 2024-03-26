@@ -60,6 +60,7 @@ export default function Login() {
             return
 
         }
+        setLoader(false)
 
         toast.error('Wrong Credentials')
 
