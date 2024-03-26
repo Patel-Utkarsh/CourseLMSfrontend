@@ -4,6 +4,7 @@ import { useRef,useEffect } from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import { AppProvider } from "../../../data";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function ProfileIcon() {
     const {user} = useContext(AppProvider);
@@ -24,6 +25,15 @@ export default function ProfileIcon() {
 
     }
 
+      function logOut() {
+        localStorage.removeItem("token");
+        localStorage.removeItem("user");
+        toast.success('Logged Out');
+        window.location.reload();
+
+    }
+
+
 
 
     return (
@@ -39,7 +49,7 @@ export default function ProfileIcon() {
                                 <Link to={'dashboard/MyAccount'}><p>Dashboard</p></Link>
                                 <p>My Courses</p>
                                 <p>Edit Profile</p>
-                                <p>Log Out</p>
+                                <p onClick={logOut}>Log Out</p>
                             </div>
 
                         </div>
