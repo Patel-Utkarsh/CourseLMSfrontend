@@ -4,6 +4,7 @@ import Instructor from "../instructorPortal/Instructor";
 import "./MyCourse.css"
 import { AppProvider } from "../../../data";
 import { Link } from "react-router-dom";
+import Loader from "../../Loader";
 
 export default function MyCourse() {
     const navigate = useNavigate();
@@ -36,7 +37,7 @@ export default function MyCourse() {
             <p id="MyCoursesDg1">My Courses</p>
             <div className="MyCoursesInnerDiv2">
                 {
-                    courseDetails.map((course)=>{
+                  courseDetails ?   courseDetails.map((course)=>{
                         return (
                             
                             <div onClick={()=>clickingCardHandler(course,course._id)} className="myCourseCards">
@@ -45,7 +46,7 @@ export default function MyCourse() {
                             </div>
                             
                         );
-                    })
+                    }) : <Loader></Loader>
                     
                 }
 
