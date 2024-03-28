@@ -93,7 +93,7 @@ export default function SingleCourse() {
             return
         }
          setLoader(true);
-        const data = await fetch('http://localhost:4000/api/v1/createOrder', {
+        const data = await fetch('https://courselms-4.onrender.com/api/v1/createOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ export default function SingleCourse() {
         if (response) {
             let newOptions = response.options;
             newOptions.handler = async ()=>{
-                const successReq = await fetch('http://localhost:4000/api/v1/verifySignature', {
+                const successReq = await fetch('https://courselms-4.onrender.com/api/v1/verifySignature', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
