@@ -80,10 +80,59 @@ export default function SingleCourse() {
 
 
 
+
     useEffect(() => {
         getCourseDetails()
 
     }, [])
+
+
+     async function buyNowHandler() {
+        if(!user) {
+            navigate('/login');
+            return
+        }
+        const data = await fetch('http://localhost:4000/api/v1/createOrder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: user._id,
+                course_id: course.courseData._id
+            })
+        });
+    
+        const response = await data.json();
+        console.log(response);
+    
+        if (response) {
+            let newOptions = response.options;
+            newOptions.handler = async ()=>{
+                const successReq = await fetch('http://localhost:4000/api/v1/verifySignature', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        userId: user._id,
+                        courseId: course.courseData._id
+                    })
+                });
+
+                const res = await successReq.json();
+                getDetails();
+                navigate('/order/success')
+
+
+            }
+          
+            
+            const rzp = new window.Razorpay(newOptions);
+            rzp.open();
+        }
+    }
+
     
     if(loader) return <Loader></Loader>
     return (
@@ -116,7 +165,7 @@ export default function SingleCourse() {
                             {user && isAddedToCart(cart,course.courseData._id) ?
                                 <button id="SingleCourseDiv1InnerDiv7Action2" onClick={goToCartHandler}>Go to Cart</button> : 
                                 <div className="SingleCourseDiv1InnerDiv8">
-                                     <button id="SingleCourseDiv1InnerDiv7Action1" >Buy Now</button>
+                                     <button onClick={buyNowHandler} id="SingleCourseDiv1InnerDiv7Action1" >Buy Now</button>
                                     <button id="SingleCourseDiv1InnerDiv7Action2" onClick={addToCart}>Add to Cart</button>
 
                                 </div>
