@@ -1,0 +1,73 @@
+
+.OrderWrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+}
+#orderImg{
+    height: 500px;
+
+}
+
+#correctImg{
+    height: 125px;
+    margin: 0 auto;
+}
+
+#orderConfirmDg1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.orderInnerDiv1{
+    box-shadow: 2px 3px 10px gray;
+    padding: 20px;
+    height: 300px;
+    margin-top: 100px;
+    border-radius: 15px;
+    margin-left: 30px;
+   
+    
+    
+
+}
+
+#myCoursesBtn{
+  
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 30%;
+   
+}
+
+@media (max-width : 600px) {
+    .OrderWrapper{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .orderImg{
+        height: 75px;
+        margin-bottom: 20px;
+    }
+    #orderConfirmDg1{
+        font-size: 25px;
+    }
+
+    #correctImg{
+        height: 100px;
+      
+    }
+    
+    .orderInnerDiv1{
+        margin-top: 20px;
+        height: 250px;
+       
+    }
+}
