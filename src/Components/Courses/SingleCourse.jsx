@@ -92,6 +92,7 @@ export default function SingleCourse() {
             navigate('/login');
             return
         }
+         setLoader(true);
         const data = await fetch('http://localhost:4000/api/v1/createOrder', {
             method: 'POST',
             headers: {
@@ -105,6 +106,7 @@ export default function SingleCourse() {
     
         const response = await data.json();
         console.log(response);
+         setLoader(false)
     
         if (response) {
             let newOptions = response.options;
