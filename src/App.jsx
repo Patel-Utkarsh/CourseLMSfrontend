@@ -21,6 +21,7 @@ import MyCourse from "./Components/dashboard/MyCourses/MyCourse.jsx";
 import ForgetPass from "./Components/ForgetPassword/ForgetPass.jsx";
 import Reset from "./Components/ForgetPassword/ResetPassword.jsx";
 import SignUpCard from "./Components/SignUP/SignUpCard.jsx";
+import OrderSuccess from "./Components/dashboard/OrderConfirmation/OrderConfirm.jsx";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Route path="/myCourses" element={<MyCourse></MyCourse>}></Route>
       <Route path="forget-password" element={<ForgetPass></ForgetPass>}></Route>
       <Route path="/update-password/:token" element={<Reset></Reset>}></Route>
+      <Route path="/order/success" element={<OrderSuccess></OrderSuccess>}></Route>
       
     </Routes>
 
