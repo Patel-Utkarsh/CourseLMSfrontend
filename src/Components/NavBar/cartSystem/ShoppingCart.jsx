@@ -104,7 +104,7 @@ export default function ShoppingCart() {
     }
 
    
-   if(loading)return  <Loader></Loader>
+   if(loader)return  <Loader></Loader>
 
     return (
         cart.length > 0?
