@@ -31,6 +31,7 @@ import instructor from "../../images/instructor.jpg"
 import { Link } from "react-router-dom";
 import { IoCallOutline } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
+import Loader from "../Loader.jsx";
 import Footer from "./Footers.jsx";
 
 
@@ -315,9 +316,9 @@ function Home() {
 
             <div className="MidSectionDiv2">
                 {
-                    course.length === 0 ? '' : course.map((item) => {
+                      course.length > 0 && typeof course[0] === 'object' ? course.map((item) => {
                         return <CourseCard data={item}></CourseCard>
-                    })
+                    }) : <Loader></Loader>
 
                 }
 
