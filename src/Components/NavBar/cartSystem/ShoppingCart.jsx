@@ -146,7 +146,7 @@ export default function ShoppingCart() {
                 
 
                 </p>
-                <button onclick = {checkoutHandler} id="checkoutBtn">Checkout</button>
+                <button onClick = {checkoutHandler} id="checkoutBtn">Checkout</button>
             </div>
 
         </div>
