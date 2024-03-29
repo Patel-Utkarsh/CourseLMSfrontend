@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from "react"
 import { AppProvider } from "../../../data"
 import { useNavigate } from "react-router-dom";
+import Loader from "../../Loader";
 import "./shoppingCart.css"
 
 export default function ShoppingCart() {
     const navigate = useNavigate();
     const {user} = useContext(AppProvider);
-    const {cart,setStars,getDetails} = useContext(AppProvider);
+    const {cart,setStars,getDetails,loader,setLoader} = useContext(AppProvider);
     const [cartValue,setCartValue] = useState(0);
-    console.log(user);
     useEffect(()=>{
         getCartValue();
     },[cart])
@@ -32,6 +32,7 @@ export default function ShoppingCart() {
     
 
     async function removeCart(id) {
+        setLoader(true);
 
 
         const data = await fetch('https://courselms-4.onrender.com/api/v1/deleteFromCart',{
@@ -48,6 +49,7 @@ export default function ShoppingCart() {
         });
 
         const response = await data.json();
+        setLoader(false);
         getDetails();
 
 
@@ -58,6 +60,7 @@ export default function ShoppingCart() {
             navigate('/login');
             return
         }
+        setLoader(true)
         const data = await fetch('https://courselms-4.onrender.com/api/v1/createOrder', {
             method: 'POST',
             headers: {
@@ -70,7 +73,8 @@ export default function ShoppingCart() {
         });
     
         const response = await data.json();
-        console.log(response);
+        //console.log(response);
+        setLoader(false);
     
         if (response) {
             let newOptions = response.options;
@@ -100,7 +104,7 @@ export default function ShoppingCart() {
     }
 
    
-   
+   if(loading)return  <Loader></Loader>
 
     return (
         cart.length > 0?
