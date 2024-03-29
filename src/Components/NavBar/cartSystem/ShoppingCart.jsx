@@ -53,6 +53,52 @@ export default function ShoppingCart() {
 
     }
 
+    async function checkoutHandler() {
+        if(!user) {
+            navigate('/login');
+            return
+        }
+        const data = await fetch('https://courselms-4.onrender.com/api/v1/createOrder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: user._id,
+                course_id: user.cart
+            })
+        });
+    
+        const response = await data.json();
+        console.log(response);
+    
+        if (response) {
+            let newOptions = response.options;
+            newOptions.handler = async ()=>{
+                const successReq = await fetch('https://courselms-4.onrender.com/api/v1/verifySignature', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        userId: user._id,
+                        courseId: user.cart
+                    })
+                });
+
+                const res = await successReq.json();
+                getDetails();
+                navigate('/order/success')
+
+
+            }
+          
+            
+            const rzp = new window.Razorpay(newOptions);
+            rzp.open();
+        }
+    }
+
    
    
 
@@ -100,7 +146,7 @@ export default function ShoppingCart() {
                 
 
                 </p>
-                <button id="checkoutBtn">Checkout</button>
+                <button onclick = {checkoutHandler} id="checkoutBtn">Checkout</button>
             </div>
 
         </div>
