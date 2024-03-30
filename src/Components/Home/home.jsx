@@ -318,7 +318,7 @@ function Home() {
                 {
                       course.length > 0 && typeof course[0] === 'object' ? course.map((item) => {
                         return <CourseCard data={item}></CourseCard>
-                    }) : <Loader></Loader>
+                    }) : <p>...Loading Data</p>
 
                 }
 
